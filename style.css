@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #00796b, #009688);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar {
+    background-color: #004d40;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffd700;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #e8f5e9;
+  }
+  
+  .hero img {
+    max-width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .hero div {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .timeline, .legacy, .quotes {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .timeline ul {
+    list-style-type: square;
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .legacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #00796b;
+  }
+  
+  .quotes blockquote {
+    background-color: #e0f2f1;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #009688;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    .hero div {
+      text-align: left;
+      margin-left: 1rem;
+    }
+  }
